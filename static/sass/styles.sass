@@ -1,0 +1,1078 @@
+@charset "UTF-8"
+
+@import 'bootstrap_override'
+@import 'util'
+@import 'style_var'
+
+// HTML5 Reset
+[hidden], area, base, basefont, command, datalist, head, input[type=hidden], link, menu[type=context], meta, noembed, noframes, param, script, source, style, track, title
+  display: none
+address, article, aside, blockquote, body, center, dd, dir, div, dl, dt, figure, figcaption, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, legend, listing, menu, nav, ol, p, plaintext, pre, section, summary, ul, xmp
+  display: block
+table
+  display: table
+caption
+  display: table-caption
+colgroup
+  display: table-column-group
+col
+  display: table-column
+thead
+  display: table-header-group
+tbody
+  display: table-row-group
+tfoot
+  display: table-footer-group
+tr
+  display: table-row
+td, th
+  display: table-cell
+ul, ol
+  -webkit-padding-start: 0px
+  padding-start: 0
+  margin: 0
+  padding: 0
+
+li
+  display: list-item
+  list-style: none
+ruby
+  display: ruby
+rt
+  display: ruby-text
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+// E:lang(ko)
+// E:lang(en)
+
+html
+  height: 100%
+
+body
+  height: 100%
+  line-height: 1.6
+  font-family: $font-body-mobile
+  color: $color-black
+  @media screen and (min-width: 767px)
+    font-family: $font-body
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+  font-weight: 400
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .btn, legend, a[type="button"], #menu, #account_buttons, .mobile_btc_price, .slicknav_nav, .info_mybalance_label, .info_unit, .price_unit_btc, .price_unit_krw, #coinone_status, .tabbar, .tabbar-btn, .coinone_logo, .logo_subbrand, .box_footer, .font_coinone
+  font-family: $font-heading-mobile
+  @media screen and (min-width: 767px)
+    font-family:  $font-heading
+
+.hidden, .blind
+  display: none
+
+
+#skip_top 
+  position: absolute
+  left: -9999em
+  &:focus 
+    background: $color-black
+    display: block
+    padding: 1em 0
+    text-align: center
+    text-decoration: none
+    color: $color-white
+    position: static
+
+.d_select 
+  //If you use compass, instead of the line below you could use +user-select($select)
+  user-select: none
+  cursor: default
+
+@-webkit-keyframes fedein 
+  0% 
+    opacity: 0
+
+  100% 
+    opacity: 1
+
+
+@keyframes fedein 
+  0% 
+    opacity: 0
+
+  100% 
+    opacity: 1
+
+
+.color 
+  color: $color-blue
+  &:hover 
+    color: $color-blue
+
+.wrapper 
+  width: 100%
+  height: auto
+
+.backTop 
+  position: absolute
+  bottom: 20px
+  right: 20px
+  width: auto
+  padding-right: 30px
+  font-size: 12px
+  line-height: 2
+  background-image: url('../img/icon_backtop.png')
+  background-size: 28px
+  background-repeat: no-repeat
+  background-position: right
+  z-index: 9999
+
+.lang 
+  display: block
+  position: absolute
+  top: 0
+  right: 0
+  margin: 0
+  padding: 0.8em
+  width: auto
+  height: 44px
+  font-size: 13px
+  text-align: right
+  color: $color-gray
+  z-index: 9999
+  a 
+    color: $color-gray
+    &.lang_act 
+      color: $color-blue
+
+
+  span 
+    cursor: pointer
+
+
+#header 
+  width: 100%
+  background-color: black
+  height: auto
+  margin: 0
+  padding: 0
+
+#contents_header 
+  position: relative
+  width: 100%
+  height: auto
+  margin-left: auto
+  margin-right: auto
+  margin-bottom: 0
+  text-align: center
+
+.header_title 
+  display: block
+  width: 100%
+  margin: auto
+  max-height: auto
+  margin-left: auto
+  margin-right: auto
+  position: absolute
+  z-index: 1000
+  text-align: center
+  padding-top: 16%
+  h1 
+    display: block
+    width: 100%
+    margin: auto
+    padding: 0
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+
+  p 
+    display: block
+    width: 100%
+    max-width: 960px
+    margin: auto
+    color: $color-white
+    //If you use compass, instead of the line below you could use +text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    text-shadow: 0 0 10px rgba(0,0,0,0.4)
+    margin-top: -1%
+    font-size: 12px
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+
+  .header_logo
+    width: 100%
+
+
+#featured 
+  .flex-control-nav 
+    display: none
+
+  .flex-direction-nav 
+    display: none
+
+
+.header_featured 
+  width: 100%
+  margin: 0
+  padding: 0
+  height: auto
+  background-color: black
+
+.header_featured_image 
+  width: 100%
+  margin: 0
+  padding: 0
+  height: 0
+  padding-top: 240px
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease
+
+.header_featured_1 
+  background-image: url('../img/header_featured_1.jpg')
+
+.header_featured_2 
+  background-image: url('../img/header_featured_2.jpg')
+
+.header_featured_3 
+  background-image: url('../img/header_featured_3.jpg')
+
+.header_featured_4 
+  background-image: url('../img/header_featured_4.jpg')
+
+.header_featured_5 
+  background-image: url('../img/header_featured_5.jpg')
+
+.header_link 
+  width: 100%
+  margin-top: 2%
+  //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease
+
+.link_icon 
+  width: 32px
+  height: 32px
+  display: inline
+  margin: 0 1%
+  padding: 4px
+  //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease
+
+.contents 
+  position: relative
+  margin: auto
+  width: auto
+  max-width: 1680px
+  height: auto
+  padding-top: 3%
+
+.contents_section 
+  padding-top: 3%
+  padding-bottom: 4%
+  position: relative
+  margin: auto
+  //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease
+
+.section_title 
+  text-align: center
+  padding-bottom: 6%
+  width: 100%
+  h1 
+    text-align: center
+    line-height: 2
+    display: inline-block
+    width: auto
+    padding: 0 0.25em
+    border-bottom: 1px $color-black solid
+    font-size: 20px
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+  h2
+    line-height: 2
+    display: inline-block
+    width: auto
+    padding: 0 0.25em
+    font-size: 20px
+    color: $color-blue
+    font-weight: 600
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+  
+
+
+.section_text 
+  padding-top: 2%
+  padding-bottom: 4%
+  margin: auto
+  width: 90%
+  max-width: 600px
+  //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease
+  h1 
+    line-height: 1.6
+    margin-bottom: 0.8em
+    font-size: 17px
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+    &.title
+      font-size: 28px
+      color: $color-blue
+
+  p 
+    line-height: 1.8
+    margin-top: 0.2em
+    margin-bottom: 0.8em
+    font-size: 16px
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+
+.section_apps 
+  padding-top: 2%
+  padding-bottom: 4%
+  margin: auto
+  width: 90%
+  max-width: 800px
+  text-align: center
+  //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease
+  h1 
+    color: $color-lightgray
+    font-size: 15px
+    line-height: 2
+    margin-bottom: 1%
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+
+  ul 
+    padding: 10px
+    height: auto
+    width: auto
+    text-align: center
+
+  li 
+    display: inline-block
+    width: 60px
+    height: auto
+    padding: 0 6px
+    font-size: 12px
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+    vertical-align: top
+
+  img 
+    display: block
+    width: 100%
+    height: auto
+    margin-bottom: 0.8em
+    overflow: hidden
+
+  a 
+    color: $color-darkgray
+    &:hover 
+      color: $color-blue
+      opacity: 0.7
+
+
+
+.section_feature 
+  padding-top: 2%
+  padding-bottom: 4%
+  margin: auto
+  width: 90%
+  max-width: 900px
+  text-align: center
+  //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: all .3s ease
+  vertical-align: top
+  h1 
+    color: $color-darkgray
+    font-size: 24px
+    line-height: 2
+    margin-bottom: 1%
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+
+  ul 
+    height: auto
+    width: auto
+    text-align: left
+
+  li 
+    display: inline-block
+    width: 75%
+    height: auto
+    padding: 0
+    padding-left: 4%
+    margin-right: 4%
+    margin-bottom: 2em
+    font-size: 14px
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+    vertical-align: top
+    &:first-child 
+      margin-left: 0
+
+    h1 
+      color: $color-lightgray
+      font-size: 18px
+      line-height: 2
+      margin-bottom: 0
+      text-align: left
+      //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all .3s ease
+
+    img 
+      display: inline-block
+      width: 40%
+      min-width: 64px
+      max-width: 120px
+      height: auto
+      margin-bottom: 0
+      overflow: hidden
+      //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all .3s ease
+
+    h2 
+      color: $color-blue
+      font-size: 18px
+      line-height: 1.4
+      margin-bottom: 0.8em
+      //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all .3s ease
+
+    p 
+      color: $color-darkgray
+      font-size: 16px
+      //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+      transition: all .3s ease
+
+.check_list
+  color: $color-darkgray
+  font-weight: 300
+  line-height: 1.6
+  margin-bottom: 32px
+  margin-left: -4px
+  font-size: 16px
+  li
+    margin-bottom: 8px
+    margin-left: 32px
+  li:before
+    content: ""
+    display: inline-block
+    width: 1em
+    height: 1em
+    margin-right: 0.4em
+    margin-left: -1.5em
+    background-size: 1em
+    background-position: center
+    background-repeat: no-repeat
+    -ms-transform: translateY(2px)
+    -moz-transform: translateY(2px)
+    -webkit-transform: translateY(2px)
+    transform: translateY(2px)
+    background-image: url('../img/list_check_blue.png')
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+      background-image: url('../img/list_check_blue@2x.png')
+
+
+#footer 
+  position: static
+  display: block
+  font-size: 14px
+  line-height: 1.2
+  width: 100%
+  font-weight: normal
+  padding-top: 10px
+  padding-bottom: 2em
+  line-height: 1.6
+  height: auto
+  margin: 0
+  padding: 0
+  background-color: $color-lightwhitegray-dimmed
+
+.contents_footer 
+  position: relative
+  margin: auto
+  width: auto
+  max-width: 960px
+  height: auto
+
+#contact 
+  padding-top: 4%
+  h1 
+    color: $color-darkgray
+    font-size: 32px
+    margin-top: 0.2em
+    margin-bottom: 0.4em
+
+  ul 
+    margin: 0 0 14px
+
+  li 
+    font-size: 14px
+    line-height: 2
+
+  address p 
+    font-style: normal
+    font-size: 12px
+    color: $color-gray
+
+
+#copyright 
+  p 
+    color: $color-lightgray
+    font-size: 13px
+    //If you use compass, instead of the line below you could use +transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+    transition: all .3s ease
+
+  img 
+    width: 160px
+    height: 50px
+
+
+@media screen and(min-width:1px) and(max-width:414px) 
+  .mbr_hide 
+    display: none
+
+  .mbr_only 
+    display: inherit
+
+
+@media screen and(min-width: 415px) 
+  .mbr_hide 
+    display: inherit
+
+  .mbr_only 
+    display: none
+
+
+@media screen and(max-width: 414px) 
+  .lang 
+    font-size: 13px
+
+  .header_title 
+    padding-top: 40px
+    h1 
+      max-width: 320px
+
+    p 
+      margin-top: 0
+      font-size: 13px
+
+
+  .link_icon 
+    width: 32px
+    height: 32px
+
+  .header_featured_image 
+    padding-top: 240px
+
+  .section_text 
+    width: 90%
+    h1 
+      font-size: 17px
+
+    p 
+      font-size: 14px
+
+
+  .section_apps 
+    h1 
+      font-size: 15px
+
+    li 
+      width: 60px
+      padding: 0 6px
+      font-size: 12px
+
+
+  .section_title 
+    h1 
+      font-size: 22px
+    h2
+      font-size: 20px
+
+  .section_feature li 
+    width: 75%
+    padding-left: 4%
+
+
+  #contact address p 
+    font-size: 12px
+
+
+@media screen and(min-width:415px) and(max-width:568px) 
+  .lang 
+    font-size: 13px
+
+  .header_title 
+    padding-top: 60px
+    h1 
+      max-width: 414px
+
+    p 
+      margin-top: 0
+      font-size: 16px
+
+
+  .link_icon 
+    width: 32px
+    height: 32px
+
+  .header_featured_image 
+    padding-top: 310px
+
+  .section_text 
+    width: 90%
+    h1 
+      font-size: 20px
+
+    p 
+      font-size: 16px
+
+
+  .section_apps 
+    h1 
+      font-size: 18px
+
+    li 
+      width: 70px
+      padding: 0 8px
+      font-size: 13px
+
+
+  .section_title
+    h1 
+      font-size: 26px
+    h2
+      font-size: 24px
+
+  .section_feature li 
+    width: 65%
+    padding-left: 4%
+
+
+  #contact address p 
+    font-size: 12px
+
+
+@media screen and(min-width:569px) and(max-width:640px) 
+  .lang 
+    font-size: 13px
+
+  .header_title 
+    padding-top: 60px
+    h1 
+      max-width: 568px
+
+    p 
+      margin-top: 0
+      font-size: 16px
+
+
+  .link_icon 
+    width: 40px
+    height: 40px
+
+  .header_featured_image 
+    padding-top: 350px
+
+  .section_text 
+    width: 90%
+    h1 
+      font-size: 20px
+
+    p 
+      font-size: 16px
+
+
+  .section_apps 
+    h1 
+      font-size: 18px
+
+    li 
+      width: 80px
+      padding: 0 10px
+      font-size: 13px
+
+
+  .section_title
+    h1 
+      font-size: 26px
+    h2
+      font-size: 24px
+
+  .section_feature li 
+    width: 65%
+    padding-left: 4%
+    h2 
+      font-size: 18px
+
+    p 
+      font-size: 16px
+
+
+  #contact address p 
+    font-size: 12px
+
+
+@media screen and(min-width:641px) and(max-width:768px) 
+  .lang 
+    font-size: 14px
+
+  .header_title 
+    padding-top: 76px
+    h1 
+      max-width: 640px
+
+    p 
+      margin-top: 0
+      font-size: 18px
+
+
+  .link_icon 
+    width: 44px
+    height: 44px
+
+  .header_featured_image 
+    padding-top: 420px
+
+  .section_text 
+    width: 75%
+    h1 
+      font-size: 20px
+
+    p 
+      font-size: 16px
+
+
+  .section_apps 
+    h1 
+      font-size: 18px
+
+    li 
+      width: 88px
+      padding: 0 16px
+      font-size: 14px
+
+
+  .section_title
+    h1 
+      font-size: 32px
+    h2
+      font-size: 28px
+
+  .section_feature li 
+    width: 26%
+    padding: 0
+    &:first-child 
+      margin-left: 8%
+
+    h2 
+      font-size: 18px
+
+    p 
+      font-size: 16px
+
+
+  #contact address p 
+    font-size: 12px
+
+
+@media screen and(min-width:769px) and(max-width:960px) 
+  .lang 
+    font-size: 16px
+
+  .header_title 
+    padding-top: 96px
+    h1 
+      max-width: 768px
+
+    p 
+      margin-top: 0
+      font-size: 18px
+
+
+  .link_icon 
+    width: 44px
+    height: 44px
+
+  .header_featured_image 
+    padding-top: 480px
+
+  .section_text 
+    width: 75%
+    h1 
+      font-size: 20px
+
+    p 
+      font-size: 16px
+
+
+  .section_apps 
+    h1 
+      font-size: 18px
+
+    li 
+      width: 88px
+      padding: 0 16px
+      font-size: 14px
+
+
+  .section_title
+    h1 
+      font-size: 32px
+    h2
+      font-size: 28px
+
+  .section_feature li 
+    width: 26%
+    padding: 0
+    &:first-child 
+      margin-left: 8%
+
+    h2 
+      font-size: 18px
+
+    p 
+      font-size: 16px
+
+
+  #contact address p 
+    font-size: 12px
+
+
+@media screen and(min-width:961px) and(max-width:1280px) 
+  .lang 
+    font-size: 16px
+
+  .header_title 
+    padding-top: 128px
+    h1 
+      max-width: 960px
+
+    p 
+      margin-top: 0
+      font-size: 22px
+
+
+  .link_icon 
+    width: 52px
+    height: 52px
+
+  .header_featured_image 
+    padding-top: 600px
+
+  .section_text 
+    width: 75%
+    h1 
+      font-size: 32px
+
+    p 
+      font-size: 18px
+
+
+  .section_apps 
+    h1 
+      font-size: 24px
+
+    li 
+      width: 92px
+      padding: 0 20px
+      font-size: 16px
+
+
+  .section_title
+    h1 
+      font-size: 40px
+    h2
+      font-size: 32px
+
+  .section_feature li 
+    width: 26%
+    padding: 0
+    &:first-child 
+      margin-left: 8%
+
+    h2 
+      font-size: 18px
+
+    p 
+      font-size: 16px
+
+
+  #contact address p 
+    font-size: 13px
+
+
+@media screen and(min-width:1281px) and(max-width:1919px) 
+  .lang 
+    font-size: 16px
+
+  .header_title 
+    padding-top: 128px
+    h1 
+      max-width: 960px
+
+    p 
+      margin-top: 0
+      font-size: 22px
+
+
+  .link_icon 
+    width: 52px
+    height: 52px
+
+  .header_featured_image 
+    padding-top: 600px
+
+  .section_text 
+    width: 75%
+    h1 
+      font-size: 32px
+
+    p 
+      font-size: 18px
+
+
+  .section_apps 
+    h1 
+      font-size: 24px
+
+    li 
+      width: 92px
+      padding: 0 20px
+      font-size: 16px
+
+
+  .section_title
+    h1 
+      font-size: 40px
+    h2
+      font-size: 32px
+
+  .section_feature li 
+    width: 26%
+    padding: 0
+    &:first-child 
+      margin-left: 8%
+
+    h2 
+      font-size: 18px
+
+    p 
+      font-size: 16px
+
+
+  #contact address p 
+    font-size: 13px
+
+
+@media screen and(min-width:1920px) 
+  .lang 
+    font-size: 16px
+
+  .header_title 
+    padding-top: 140px
+    h1 
+      max-width: 960px
+
+    p 
+      margin-top: 0
+      font-size: 24px
+
+
+  .link_icon 
+    width: 60px
+    height: 60px
+
+  .header_featured_image 
+    padding-top: 640px
+
+  .section_text 
+    width: 75%
+    h1 
+      font-size: 36px
+
+    p 
+      font-size: 18px
+
+
+  .section_apps 
+    h1 
+      font-size: 28px
+
+    li 
+      width: 100px
+      padding: 0 24px
+      font-size: 16px
+
+
+  .section_title
+    h1 
+      font-size: 48px
+    h2
+      font-size: 36px
+
+  .section_feature li 
+    width: 26%
+    padding: 0
+    &:first-child 
+      margin-left: 8%
+
+    h2 
+      font-size: 20px
+
+    p 
+      font-size: 16px
+
+
+  #contact address p 
+    font-size: 14px
+
+
+@media screen and(min-width:480px) and(orientation:landscape) 
+  .contents_section 
+    width: 75%
+
+
+@media all and(-webkit-min-device-pixel-ratio: 2) 
+  .backTop 
+    background-image: url('../img/icon_backtop@2x.png')
+
+
+@media all and(-webkit-min-device-pixel-ratio: 2) and(min-width:768px) 
+  .header_featured_1 
+    background-image: url('../img/header_featured_1@2x.jpg')
+
+  .header_featured_2 
+    background-image: url('../img/header_featured_2@2x.jpg')
+
+  .header_featured_3 
+    background-image: url('../img/header_featured_3@2x.jpg')
+
+  .header_featured_4 
+    background-image: url('../img/header_featured_4@2x.jpg')
+
+  .header_featured_5 
+    background-image: url('../img/header_featured_5@2x.jpg')
+
+
+@media all and(min-width:1280px) 
+  .header_featured_1 
+    background-image: url('../img/header_featured_1@2x.jpg')
+
+  .header_featured_2 
+    background-image: url('../img/header_featured_2@2x.jpg')
+
+  .header_featured_3 
+    background-image: url('../img/header_featured_3@2x.jpg')
+
+  .header_featured_4 
+    background-image: url('../img/header_featured_4@2x.jpg')
+
+  .header_featured_5 
+    background-image: url('../img/header_featured_5@2x.jpg')

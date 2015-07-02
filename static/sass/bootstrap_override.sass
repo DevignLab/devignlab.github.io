@@ -1,0 +1,474 @@
+@charset "UTF-8"
+@import 'style_var'
+$font-family-sans-serif: $font-body-mobile
+@import "bootstrap-compass"
+@import "bootstrap-variables"
+@import "bootstrap"
+@import 'util'
+
+.hidden-xxs
+  @media screen and (max-width: 479px)
+    display: none !important
+  @media screen and (min-width: 480px)
+    display: inherit !important
+
+.hidden-xs-ss
+  @media screen and (max-width: 567px)
+    display: none !important
+
+@media screen and (min-width: 0px) and (max-width: 479px)
+  .col-xxs-1, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9, .col-xxs-10, .col-xxs-11, .col-xxs-12
+    float: left
+  .col-xxs-12
+    width: 100%
+  .col-xxs-11 
+    width: 91.66666667%
+  .col-xxs-10
+    width: 83.33333333%
+  .col-xxs-9
+    width: 75%
+  .col-xxs-8
+    width: 66.66666667%
+  .col-xxs-7
+    width: 58.33333333%  
+  .col-xxs-6
+    width: 50%  
+  .col-xxs-5
+    width: 41.66666667%
+  .col-xxs-4
+    width: 33.33333333%  
+  .col-xxs-3
+    width: 25%  
+  .col-xxs-2
+    width: 16.66666667%  
+  .col-xxs-1
+    width: 8.33333333%  
+  .col-xxs-pull-12
+    right: 100%
+  .col-xxs-pull-11
+    right: 91.66666667%
+  .col-xxs-pull-10
+    right: 83.33333333%
+  .col-xxs-pull-9
+    right: 75%  
+  .col-xxs-pull-8
+    right: 66.66666667%  
+  .col-xxs-pull-7
+    right: 58.33333333%  
+  .col-xxs-pull-6
+    right: 50%  
+  .col-xxs-pull-5
+    right: 41.66666667%  
+  .col-xxs-pull-4
+    right: 33.33333333%  
+  .col-xxs-pull-3
+    right: 25%  
+  .col-xxs-pull-2
+    right: 16.66666667%
+  .col-xxs-pull-1
+    right: 8.33333333%
+  .col-xxs-pull-0
+    right: auto  
+  .col-xxs-push-12
+    left: 100%
+  .col-xxs-push-11
+    left: 91.66666667%
+  .col-xxs-push-10
+    left: 83.33333333%
+  .col-xxs-push-9
+    left: 75%
+  .col-xxs-push-8
+    left: 66.66666667%
+  .col-xxs-push-7
+    left: 58.33333333%
+  .col-xxs-push-6
+    left: 50%
+  .col-xxs-push-5
+    left: 41.66666667%
+  .col-xxs-push-4
+    left: 33.33333333%
+  .col-xxs-push-3
+    left: 25%
+  .col-xxs-push-2
+    left: 16.66666667%
+  .col-xxs-push-1
+    left: 8.33333333%
+  .col-xxs-push-0
+    left: auto  
+  .col-xxs-offset-12
+    margin-left: 100%
+  .col-xxs-offset-11
+    margin-left: 91.66666667%
+  .col-xxs-offset-10
+    margin-left: 83.33333333%
+  .col-xxs-offset-9
+    margin-left: 75%
+  .col-xxs-offset-8
+    margin-left: 66.66666667%
+  .col-xxs-offset-7
+    margin-left: 58.33333333%
+  .col-xxs-offset-6
+    margin-left: 50%
+  .col-xxs-offset-5
+    margin-left: 41.66666667%
+  .col-xxs-offset-4
+    margin-left: 33.33333333%
+  .col-xxs-offset-3
+    margin-left: 25%
+  .col-xxs-offset-2
+    margin-left: 16.66666667%
+  .col-xxs-offset-1
+    margin-left: 8.33333333%
+  .col-xxs-offset-0
+    margin-left: 0
+
+@media screen and (min-width: 480px) and (max-width: 567px)
+  .col-ss-1, .col-ss-2, .col-ss-3, .col-ss-4, .col-ss-5, .col-ss-6, .col-ss-7, .col-ss-8, .col-ss-9, .col-ss-10, .col-ss-11, .col-ss-12
+    float: left
+  .col-ss-12
+    width: 100%
+  .col-ss-11 
+    width: 91.66666667%
+  .col-ss-10
+    width: 83.33333333%
+  .col-ss-9
+    width: 75%
+  .col-ss-8
+    width: 66.66666667%
+  .col-ss-7
+    width: 58.33333333%  
+  .col-ss-6
+    width: 50%  
+  .col-ss-5
+    width: 41.66666667%
+  .col-ss-4
+    width: 33.33333333%  
+  .col-ss-3
+    width: 25%  
+  .col-ss-2
+    width: 16.66666667%  
+  .col-ss-1
+    width: 8.33333333%  
+  .col-ss-pull-12
+    right: 100%
+  .col-ss-pull-11
+    right: 91.66666667%
+  .col-ss-pull-10
+    right: 83.33333333%
+  .col-ss-pull-9
+    right: 75%  
+  .col-ss-pull-8
+    right: 66.66666667%  
+  .col-ss-pull-7
+    right: 58.33333333%  
+  .col-ss-pull-6
+    right: 50%  
+  .col-ss-pull-5
+    right: 41.66666667%  
+  .col-ss-pull-4
+    right: 33.33333333%  
+  .col-ss-pull-3
+    right: 25%  
+  .col-ss-pull-2
+    right: 16.66666667%
+  .col-ss-pull-1
+    right: 8.33333333%
+  .col-ss-pull-0
+    right: auto  
+  .col-ss-push-12
+    left: 100%
+  .col-ss-push-11
+    left: 91.66666667%
+  .col-ss-push-10
+    left: 83.33333333%
+  .col-ss-push-9
+    left: 75%
+  .col-ss-push-8
+    left: 66.66666667%
+  .col-ss-push-7
+    left: 58.33333333%
+  .col-ss-push-6
+    left: 50%
+  .col-ss-push-5
+    left: 41.66666667%
+  .col-ss-push-4
+    left: 33.33333333%
+  .col-ss-push-3
+    left: 25%
+  .col-ss-push-2
+    left: 16.66666667%
+  .col-ss-push-1
+    left: 8.33333333%
+  .col-ss-push-0
+    left: auto  
+  .col-ss-offset-12
+    margin-left: 100%
+  .col-ss-offset-11
+    margin-left: 91.66666667%
+  .col-ss-offset-10
+    margin-left: 83.33333333%
+  .col-ss-offset-9
+    margin-left: 75%
+  .col-ss-offset-8
+    margin-left: 66.66666667%
+  .col-ss-offset-7
+    margin-left: 58.33333333%
+  .col-ss-offset-6
+    margin-left: 50%
+  .col-ss-offset-5
+    margin-left: 41.66666667%
+  .col-ss-offset-4
+    margin-left: 33.33333333%
+  .col-ss-offset-3
+    margin-left: 25%
+  .col-ss-offset-2
+    margin-left: 16.66666667%
+  .col-ss-offset-1
+    margin-left: 8.33333333%
+  .col-ss-offset-0
+    margin-left: 0
+
+@media screen and (min-width: 568px) and (max-width: 767px)
+  .col-ms-1, .col-ms-2, .col-ms-3, .col-ms-4, .col-ms-5, .col-ms-6, .col-ms-7, .col-ms-8, .col-ms-9, .col-ms-10, .col-ms-11, .col-ms-12
+    float: left
+  .col-ms-12
+    width: 100%
+  .col-ms-11 
+    width: 91.66666667%
+  .col-ms-10
+    width: 83.33333333%
+  .col-ms-9
+    width: 75%
+  .col-ms-8
+    width: 66.66666667%
+  .col-ms-7
+    width: 58.33333333%  
+  .col-ms-6
+    width: 50%  
+  .col-ms-5
+    width: 41.66666667%
+  .col-ms-4
+    width: 33.33333333%  
+  .col-ms-3
+    width: 25%  
+  .col-ms-2
+    width: 16.66666667%  
+  .col-ms-1
+    width: 8.33333333%  
+  .col-ms-pull-12
+    right: 100%
+  .col-ms-pull-11
+    right: 91.66666667%
+  .col-ms-pull-10
+    right: 83.33333333%
+  .col-ms-pull-9
+    right: 75%  
+  .col-ms-pull-8
+    right: 66.66666667%  
+  .col-ms-pull-7
+    right: 58.33333333%  
+  .col-ms-pull-6
+    right: 50%  
+  .col-ms-pull-5
+    right: 41.66666667%  
+  .col-ms-pull-4
+    right: 33.33333333%  
+  .col-ms-pull-3
+    right: 25%  
+  .col-ms-pull-2
+    right: 16.66666667%
+  .col-ms-pull-1
+    right: 8.33333333%
+  .col-ms-pull-0
+    right: auto  
+  .col-ms-push-12
+    left: 100%
+  .col-ms-push-11
+    left: 91.66666667%
+  .col-ms-push-10
+    left: 83.33333333%
+  .col-ms-push-9
+    left: 75%
+  .col-ms-push-8
+    left: 66.66666667%
+  .col-ms-push-7
+    left: 58.33333333%
+  .col-ms-push-6
+    left: 50%
+  .col-ms-push-5
+    left: 41.66666667%
+  .col-ms-push-4
+    left: 33.33333333%
+  .col-ms-push-3
+    left: 25%
+  .col-ms-push-2
+    left: 16.66666667%
+  .col-ms-push-1
+    left: 8.33333333%
+  .col-ms-push-0
+    left: auto  
+  .col-ms-offset-12
+    margin-left: 100%
+  .col-ms-offset-11
+    margin-left: 91.66666667%
+  .col-ms-offset-10
+    margin-left: 83.33333333%
+  .col-ms-offset-9
+    margin-left: 75%
+  .col-ms-offset-8
+    margin-left: 66.66666667%
+  .col-ms-offset-7
+    margin-left: 58.33333333%
+  .col-ms-offset-6
+    margin-left: 50%
+  .col-ms-offset-5
+    margin-left: 41.66666667%
+  .col-ms-offset-4
+    margin-left: 33.33333333%
+  .col-ms-offset-3
+    margin-left: 25%
+  .col-ms-offset-2
+    margin-left: 16.66666667%
+  .col-ms-offset-1
+    margin-left: 8.33333333%
+  .col-ms-offset-0
+    margin-left: 0
+
+
+h1, .h1
+  font-size: $font-size-h1
+h2, .h2
+  font-size: $font-size-h2
+h3, .h3
+  font-size: $font-size-h3
+h4, .h4
+  font-size: $font-size-h4
+h5, .h5
+  font-size: $font-size-h5
+h6, .h6
+  font-size: $font-size-h6
+
+.h1-size
+  font-size: $font-size-h1 !important
+.h1-2-size
+  font-size: $font-size-h1_2 !important
+.h1-3-size
+  font-size: $font-size-h1_3 !important
+.h1-4-size
+  font-size: $font-size-h1_4 !important
+
+.h2-size
+  font-size: $font-size-h2 !important
+.h3-size
+  font-size: $font-size-h3 !important
+.h4-size
+  font-size: $font-size-h4 !important
+.h5-size
+  font-size: $font-size-h5 !important
+.h6-size
+  font-size: $font-size-h6 !important
+
+
+.page-header
+  border: none
+
+.btn
+  padding: 2px 16px 0px
+  border-radius: 3px  
+  height: 44px
+  font-size: 16px
+  line-height: 44px
+  font-weight: 500
+  color: $color-white
+  background-color: $color-blue-btn
+  border: none
+  text-shadow: 0px 1px 1px rgba(50,50,50,0.2)
+
+.btn.btn-default
+  background-color: $color-btn-default
+.btn.btn-default:hover
+  background-color: $color-btn-default-hover
+
+.btn.btn-danger
+  background-color: $color-red
+  border-color: none
+.btn.btn-danger:hover
+  background-color: $color-red-hover
+
+
+.btn.btn-success
+  background-color: $color-green-btn
+.btn.btn-success:hover
+  background-color: $color-green-btn-hover
+
+.btn.disabled
+  background-color: $color-btn-disabled
+  color: $color-white
+.btn:hover
+  background-color: $color-blue-btn-hover
+  color: $color-white
+
+.btn.btn-primary
+  background-color: $color-blue-btn
+  color: $color-white
+  border: none
+.btn.btn-primary:hover
+  background-color: $color-blue-btn-hover
+  color: $color-white
+
+.btn.disabled, .btn[disabled], fieldset[disabled] .btn
+  background-color: $color-btn-disabled
+  opacity: 1
+
+
+.btn-light
+  &.btn:active, &.btn.active
+    background-color: $color-coinone-blue
+    color: $color-white
+    text-shadow: 0px 1px 1px $color-deepblue
+    border: 1px solid $color-coinone-blue
+    @include box-shadow(0, 1px, 0, $color-deepblue)
+    @include translateY(1px)
+    @include transition(all, 0.3, ease-out)
+
+.glyphicon.glyphicon-ok.form-control-feedback
+  color: $color-darkgreen
+
+.modal-dialog
+  margin: 0px
+  height: 100%
+  width: 100%
+  @media screen and (min-width: 568px) and (max-width: 767px)
+    margin: 3px auto auto
+    max-width: 568px
+  @media screen and (min-width:768px)
+    margin: 32px auto auto
+    max-width: 568px
+
+.modal.fade .modal-dialog
+  @include transition(all, 0.3s, ease-out)
+  
+.ng-invalid + .form-control-feedback
+  display: none
+.ng-valid + .form-control-feedback
+  display: block
+
+.has-success .form-control
+  border-color: transparent
+
+
+.dropdown-menu
+  border-radius: 4px
+  background-color: #ffffff
+  @include box-shadow(0, 2px, 0, $color-whitegray)
+  border: 1px solid $color-whitegray
+  padding: 0
+  margin: 8px 0
+  li > a
+    padding: 10px 16px
+  li:first-child a
+    border-top-left-radius: 4px
+    border-top-right-radius: 4px
+  li:last-child a
+    border-bottom-left-radius: 4px
+    border-bottom-right-radius: 4px
