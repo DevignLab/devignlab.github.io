@@ -9002,55 +9002,62 @@ h6, .h6 {
   transition: all 0.3 ease-out;
 }
 
-/* line 434, ../sass/bootstrap_override.sass */
+/* line 435, ../sass/bootstrap_override.sass */
+.btn_large {
+  font-size: 28px;
+  height: 54px;
+  padding: 9px 16px 12px;
+}
+
+/* line 440, ../sass/bootstrap_override.sass */
 .glyphicon.glyphicon-ok.form-control-feedback {
   color: #20C863;
 }
 
-/* line 437, ../sass/bootstrap_override.sass */
+/* line 443, ../sass/bootstrap_override.sass */
 .modal-dialog {
   margin: 0px;
   height: 100%;
   width: 100%;
 }
 @media screen and (min-width: 568px) and (max-width: 767px) {
-  /* line 437, ../sass/bootstrap_override.sass */
+  /* line 443, ../sass/bootstrap_override.sass */
   .modal-dialog {
     margin: 3px auto auto;
     max-width: 568px;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 437, ../sass/bootstrap_override.sass */
+  /* line 443, ../sass/bootstrap_override.sass */
   .modal-dialog {
     margin: 32px auto auto;
     max-width: 568px;
   }
 }
 
-/* line 448, ../sass/bootstrap_override.sass */
+/* line 454, ../sass/bootstrap_override.sass */
 .modal.fade .modal-dialog {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-/* line 451, ../sass/bootstrap_override.sass */
+/* line 457, ../sass/bootstrap_override.sass */
 .ng-invalid + .form-control-feedback {
   display: none;
 }
 
-/* line 453, ../sass/bootstrap_override.sass */
+/* line 459, ../sass/bootstrap_override.sass */
 .ng-valid + .form-control-feedback {
   display: block;
 }
 
-/* line 456, ../sass/bootstrap_override.sass */
+/* line 462, ../sass/bootstrap_override.sass */
 .has-success .form-control {
   border-color: transparent;
 }
 
-/* line 460, ../sass/bootstrap_override.sass */
+/* line 466, ../sass/bootstrap_override.sass */
 .dropdown-menu {
   border-radius: 4px;
   background-color: #ffffff;
@@ -9061,16 +9068,16 @@ h6, .h6 {
   padding: 0;
   margin: 8px 0;
 }
-/* line 467, ../sass/bootstrap_override.sass */
+/* line 473, ../sass/bootstrap_override.sass */
 .dropdown-menu li > a {
   padding: 10px 16px;
 }
-/* line 469, ../sass/bootstrap_override.sass */
+/* line 475, ../sass/bootstrap_override.sass */
 .dropdown-menu li:first-child a {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 472, ../sass/bootstrap_override.sass */
+/* line 478, ../sass/bootstrap_override.sass */
 .dropdown-menu li:last-child a {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;

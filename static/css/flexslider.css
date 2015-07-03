@@ -107,9 +107,9 @@ html[xmlns] .slides {display: block;}
 /* contents_section */
 .contents_section .flex-control-nav {width: 100%; position: absolute; bottom: 8px; text-align: center; z-index: 999}
 .contents_section .flex-control-nav li {padding:6px; margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
-.contents_section .flex-control-paging li a {width: 6px; height: 6px; display: block; background: #b5d2fb; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.05); -moz-box-shadow: 0 0 3px rgba(0,0,0,0.05); -o-box-shadow: 0 0 3px rgba(0,0,0,0.05); box-shadow: 0 0 3px rgba(0,0,0,0.05); border: 2px solid #ffffff; }
-.contents_section .flex-control-paging li a:hover { background: #5897ee; border: 2px solid #5897ee;  }
-.contents_section .flex-control-paging li a.flex-active { background: #5ba4fc; cursor: default; border: 2px solid #5ba4fc;}
+.contents_section .flex-control-paging li a {width: 8px; height: 8px; display: block; background: #b5d2fb; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.05); -moz-box-shadow: 0 0 3px rgba(0,0,0,0.05); -o-box-shadow: 0 0 3px rgba(0,0,0,0.05); box-shadow: 0 0 3px rgba(0,0,0,0.05); border: 2px solid #ffffff; }
+.contents_section .flex-control-paging li a:hover { background: #5897ee; border: 3px solid #5897ee;  }
+.contents_section .flex-control-paging li a.flex-active { background: #5ba4fc; cursor: default; border: 3px solid #5ba4fc;}
 @media screen and (max-width: 767px) {
 	.contents_section .flex-control-nav {opacity: 1;}
 }
